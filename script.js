@@ -28,9 +28,7 @@ searchBtn.addEventListener("click", async () => {
 
   <p>Released: ${release_date}</p>
 
-<p>Director: ${director}</p>
-
-  <p>Released: ${release_date}</p>
+  <p>Released: ${description}</p>
 
 `;
 });
