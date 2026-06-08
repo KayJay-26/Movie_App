@@ -13,5 +13,24 @@ searchBtn.addEventListener("click", async () => {
     item.title.toLowerCase().includes(movieName.toLowerCase()),
   );
 
-  console.log(movie);
+  const { title, image, director, release_date, description } = movie;
+
+  movieResult.innerHTML = `
+  <h2>${title}</h2>
+
+  <img
+    src="${image}"
+    alt="${title}"
+    width="250"
+  >
+
+  <p>Director: ${director}</p>
+
+  <p>Released: ${release_date}</p>
+
+<p>Director: ${director}</p>
+
+  <p>Released: ${release_date}</p>
+
+`;
 });
