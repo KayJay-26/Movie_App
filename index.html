@@ -3,19 +3,23 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Movie Search</title>
+    <title>Studio Ghibli Explorer</title>
 
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="container">
-      <h1><u>Movie Search</u></h1>
+      <h1>Studio Ghibli Explorer</h1>
 
-      <input type="text" id="movieInput" placeholder="Enter movie name" />
+      <div class="search-box">
+        <input type="text" id="movieInput" placeholder="Enter a movie title" />
 
-      <button id="searchBtn">Search</button>
+        <button id="searchBtn">Search</button>
+      </div>
 
-      <div id="movieResult"></div>
+      <div id="movieResult">
+        <!-- Movie details will appear here -->
+      </div>
     </div>
 
     <script src="script.js"></script>
