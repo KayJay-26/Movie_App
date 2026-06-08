@@ -7,7 +7,11 @@ searchBtn.addEventListener("click", async () => {
 
   const data = await response.json();
 
+  const movieName = movieInput.value;
+
   const movie = data.find((item) =>
     item.title.toLowerCase().includes(movieName.toLowerCase()),
   );
+
+  console.log(movie);
 });
